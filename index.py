@@ -1,10 +1,10 @@
-# fungsi 1: mereverse setiap kata dalam kalimat
+# fungsi reverse_per_kata: mereverse setiap kata dalam kalimat
 def reverse_per_kata(kalimat):
     kataList = kalimat.split()
     hasil = " ".join([kata[::-1] for kata in kataList])
     return hasil
 
-# fungsi 2: mengurutkan kata berdasarkan indeks list
+# fungsi urutkan_kalimat: mengurutkan kata berdasarkan indeks list
 def urutkan_kalimat(kalimat, urutan):
     kataList = kalimat.split()
     hasil = []
@@ -18,7 +18,7 @@ def urutkan_kalimat(kalimat, urutan):
     
     return " ".join(hasil)
 
-# fungsi 3: mengganti huruf vokal dengan simbol tertentu
+# fungsi ganti_vokal: mengganti huruf vokal dengan simbol tertentu
 def ganti_vokal(kalimat, opsi):
     vokal_kecil = {"a": "4", "i": "1", "u": "|_|", "e": "3", "o": "0"}
     vokal_kapital = {"A": "4", "I": "1", "U": "|_|", "E": "3", "O": "0"}
